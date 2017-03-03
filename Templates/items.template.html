@@ -1,0 +1,14 @@
+<h1>Welcome to Items Tab</h1>
+<ul>
+  <li ng-repeat="item in mainData.items">
+    (<a ng-click="mainData.logMenuItems();">{{item.short_name}}</a>)
+    {{item.category}}
+  </li>
+</ul>
+<!-- 
+<ul>
+  <li ng-repeat="item in $ctrl.items"
+      ui-sref="itemDetail({itemId: $index})">
+    {{ item.quantity }} of {{ item.name }}
+  </li>
+</ul> -->

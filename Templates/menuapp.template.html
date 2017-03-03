@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="category in mainData.categories">
+    (<a ui-sref="mainData.itemDetail({itemId: $index})" ng-click="mainData.logMenuItems(category.short_name);">{{category.short_name}}</a>)
+    {{category.name}}
+  </li>
+</ul>
